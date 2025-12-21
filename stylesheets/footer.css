@@ -57,11 +57,13 @@
 	height: 44px;
 	display: flex;
 	align-items: center;
-	white-space: nowrap;
-	padding-left: 8px;
+	transition: all 0.3s ease;
 	border-radius: 9999px;
-	padding-right: 8px;
+	justify-content: center;
+	text-decoration: none;
 	background-color: var(--color-background);
+	padding-left:8px;
+	padding-right:8px;
 }
 
 
@@ -125,6 +127,7 @@
 	.contact-info-wrapper {
 		display: grid;
 		grid-row-gap: 12px;
+		justify-content: center;
 	}
 	.info-left {
 		flex-wrap: wrap;
