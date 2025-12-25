@@ -74,7 +74,9 @@ iterateItems(inventoryData["Squishies"], document.getElementById("gallery-squish
 //add animals
 iterateItems(inventoryData["Animals"], document.getElementById("gallery-animal-list"));
 
+/*
 document.getElementById("gallery-keychain-list").style.display="none";
 document.getElementById("gallery-keychain-label").style.display="none";
 document.getElementById("gallery-squishy-list").style.display="none";
 document.getElementById("gallery-squishy-label").style.display="none";
+*/

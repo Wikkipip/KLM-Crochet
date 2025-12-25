@@ -117,17 +117,17 @@ var inventoryData = {
 		}
 	],
 	"Keychains": [
-		{
+		/*{
 			"Name": "Keychain",
 			"price": 0,
 			"photo": "assets/placeholder.png"
-		}
+		}*/
 	],
 	"Squishies": [
-		{
+		/*{
 			"Name": "Squishy",
 			"price": 0,
 			"photo": "assets/placeholder.png"
-		}
+		}*/
 	]
 };
