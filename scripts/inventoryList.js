@@ -105,8 +105,13 @@ var inventoryData = [
 		"photo": "assets/photos/henry polar bear.jpg"
 	},
 	{
-		"Name": "Unnamed Cardinal",
-		"price": "None Yet",
+		"Name": "Casper Cardinal",
+		"price": 50,
 		"photo": "assets/photos/cardinal.jpg"
+	},
+	{
+		"Name": "Sally Bear",
+		"price": 50,
+		"photo": "assets/photos/sally bear.jpg"
 	}
 ];
