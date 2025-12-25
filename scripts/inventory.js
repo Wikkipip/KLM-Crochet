@@ -44,7 +44,7 @@ function createInventoryItem(name, price, photo, parent) {
 	parent.appendChild(gallery_item);
 };
 
-function iterateItems(data,parent) {
+function iterateItems(data, parent) {
 	for (var i=0; i < data.length; i++) {
 		var itemName = data[i].Name;
 		var itemPrice = data[i].price;
@@ -66,13 +66,13 @@ function iterateItems(data,parent) {
 }
 
 //add keychains
-iterateItems(inventoryData["Keychains"],document.getElementById("gallery-keychain-list"));
+iterateItems(inventoryData["Keychains"], document.getElementById("gallery-keychain-list"));
 
 //add squishies
-iterateItems(inventoryData["Squishies"],document.getElementById("gallery-squishy-list"));
+iterateItems(inventoryData["Squishies"], document.getElementById("gallery-squishy-list"));
 
 //add animals
-iterateItems(inventoryData["Animals"],document.getElementById("gallery-animal-list"));
+iterateItems(inventoryData["Animals"], document.getElementById("gallery-animal-list"));
 
 document.getElementById("gallery-keychain-list").style.display="none";
 document.getElementById("gallery-keychain-label").style.display="none";
