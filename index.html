@@ -22,53 +22,55 @@
 				</h1>
 				<p class="landing-subtitle">
 					Let me know if you are interested in any of the handmade items, or if you would like something custom made!
-				<br>
-					Contact info and socials can be found at the bottom of the page.
 				</p>
+				<div class="social-links info-left">
+					<div class="landing-contact-nohover">
+						<svg width="24" height="24" viewBox="-1 -1 18 18">
+							<path class="" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42a18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" fill="currentColor" fill-rule="evenodd" data-node-id="TQ_0LY0oYF7mt" data-node-instance-id="TQ__DJJmn3fa6" data-type="path" data-not-interactive="true"></path>
+						</svg>
+					<span style="display:flex;margin-left:4px">+1 (616) 635-6837</span>
+					</div>
+					<div class="landing-contact-nohover">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path class="" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" fill="currentColor" data-node-id="TQ_E-FkEWlEKB" data-node-instance-id="TQ_FQokzHLheL" data-type="path" data-not-interactive="true"></path>
+						</svg>
+						<span style="display:flex;margin-left:4px">meadekaral@outlook.com</span>
+					</div>
+				</div>
 			</div>
-			<div class="landing-image-wrapper">
-				<image class="landing-image" src="assets/landing.jpg" alt="landing image alt text" style="width:100%;height:100%;object-fit: cover;">
-				</image>
-				<image class="landing-image-wide" src="assets/landing-wide.jpg" alt="landing image alt text" style="width:100%;height:100%;object-fit: cover;">
-				</image>
-			</div>
+			<image class="landing-image-vertical" src="assets/landing-vertical.png" alt="landing image alt text">
+			</image>
 		</div>
+		<image class="landing-image-wide" src="assets/landing-wide.jpg" alt="landing image alt text">
+		</image>
 	</div>
 
 	<div id="gallery">
+		<script src="scripts/inventoryList.js"></script>
+		<script defer src="scripts/inventory.js"></script>
+		
 		<div class="gallery-heading">
 			<span class="title" style="margin: 10px;">
 				Gallery
 			</span>
-			<span class="subtitle" style="margin: 10px;">
-				See what items are available? placeholder
-			</span>
 		</div>
+		
+		
+		<span id="gallery-keychain-label" class="subtitle" style="margin: 10px;">
+			Keychains
+		</span>
+		<div class="gallery-content" id="gallery-keychain-list"></div>
 
-		<div class="gallery-content" id="gallery-item-list">
-			<script src="scripts/inventoryList.js"></script>
-			<script defer src="scripts/inventory.js"></script>
+		<span id="gallery-squishy-label" class="subtitle" style="margin: 10px;">
+			Squishies
+		</span>
+		<div class="gallery-content" id="gallery-squishy-list"></div>
+		
 
-			<!-- EXAMPLE ITEM
-			<div class="gallery-item">
-				<div class="gallery-item-image-wrapper">
-					<image src="assets/placeholder.png" alt="gallery item alt text" class="gallery-item-image">
-					</image>
-				</div>
-				<div class="gallery-item-label">
-					<div class="gallery-item-text-wrapper">
-						<span class="gallery-item-text">
-							Animal Name Here
-						</span>
-						<span class="gallery-item-text">
-							$100.00
-						</span>
-					</div>
-				</div>
-			</div>
-			-->
-
-		</div>
+		<span id="gallery-animal-label" class="subtitle" style="margin: 10px;">
+			Animals
+		</span>
+		<div class="gallery-content" id="gallery-animal-list"></div>
 	</div>
 
 	<div id="footer">

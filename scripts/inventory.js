@@ -1,6 +1,4 @@
-var gallery_item_list = document.getElementById("gallery-item-list");
-
-function createInventoryItem(name, price, photo) {
+function createInventoryItem(name, price, photo, parent) {
 	//creates the main gallery item container
 	var gallery_item = document.createElement("div");
 	gallery_item.className = "gallery-item";
@@ -43,18 +41,40 @@ function createInventoryItem(name, price, photo) {
 	
 
 	//append the final gallery item to the list
-	gallery_item_list.appendChild(gallery_item);
+	parent.appendChild(gallery_item);
 };
 
-for (var i=0; i < inventoryData.length; i++) {
-	var itemName = inventoryData[i].Name;
-	var itemPrice = inventoryData[i].price;
+function iterateItems(data,parent) {
+	for (var i=0; i < data.length; i++) {
+		var itemName = data[i].Name;
+		var itemPrice = data[i].price;
 
-	if (typeof(itemPrice) == "number") {
-		itemPrice = "$" + itemPrice.toFixed(2).toString();
-	};
+		if (typeof(itemPrice) == "number") {
+			itemPrice = "$" + itemPrice.toFixed(2).toString();
+		};
 
-	var itemPhoto = inventoryData[i].photo;
+		var itemPhoto = data[i].photo;
 
-	createInventoryItem(itemName, itemPrice, itemPhoto);
+		createInventoryItem(itemName, itemPrice, itemPhoto, parent);
+	}
+	if (data.length == 0) {
+		var div = document.createElement("div");
+		div.innerHTML = "Nothing to see here...";
+
+		parent.appendChild(div);
+	}
 }
+
+//add keychains
+iterateItems(inventoryData["Keychains"],document.getElementById("gallery-keychain-list"));
+
+//add squishies
+iterateItems(inventoryData["Squishies"],document.getElementById("gallery-squishy-list"));
+
+//add animals
+iterateItems(inventoryData["Animals"],document.getElementById("gallery-animal-list"));
+
+document.getElementById("gallery-keychain-list").style.display="none";
+document.getElementById("gallery-keychain-label").style.display="none";
+document.getElementById("gallery-squishy-list").style.display="none";
+document.getElementById("gallery-squishy-label").style.display="none";
